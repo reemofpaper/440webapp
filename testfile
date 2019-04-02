@@ -1,0 +1,63 @@
+GDF 1.0 Code VS. Zombies // Magic word, version number, and Environment name.
+
+QUESTIONS 5 // 5 questions in this specific file
+
+11 Which is private member functions access scope? //id question
+4 1 ////number of options which answer is correct
+Member functions which can only be used within the class	// answer1
+Member functions which can used outside the class			 // answer2
+Member functions which are accessible in derived class		// answer3
+Member functions which can't be accessed inside the class	// answer4
+3 // num lines in desc
+The member functions can be accessed inside the class only if they are private.
+The access is scope is limited to ensure the security of the private members and their
+usage.
+
+
+12 Which among the following is true?
+4 2 ////number of options which answer is correct
+The private members can't be accessed by public members of the class
+The private members can be accessed by public members of the class
+The private members can be accessed only by the private members of the class
+The private members can't be accessed by the protected members of the class
+3 //num lines in desc
+The private members are accessible within the class. There is no restriction on use of private
+members by public or protected members. All the members can access the private member functions of
+the class.
+
+
+
+13 Which member can never be accessed by inherited classes?
+4 1 ////number of options which answer is correct
+Private member function
+Public member function
+Protected member function
+All can be accessed
+3 //num lines in desc
+The private member functions can never be accessed in the derived classes. The access specifiers is
+of maximum security that allows only the members of self class to access the private member
+functions.
+
+
+
+14 Which syntax among the following shows that a member is private in a class?
+4	2 	////number of options which answer is correct
+private: functionName(parameters)
+private(functionName(parameters))
+private functionName(parameters)
+private::functionName(parameters)
+2 // num lines in desc
+The function declaration must contain private keyword follower by the return type and function name.
+Private keyword is followed by normal function declaration.
+
+
+15 In java, which rule must be followed?
+4	4 	////number of options which answer is correct
+Keyword private preceding list of private member's
+Keyword private with a colon before list of private member's
+Keyword private with arrow before each private member
+Keyword private preceding each private member
+3 // num lines in desc
+The private keyword must be mentioned before each private member. Unlike the rule in C++ to specify
+private once and list all other private member's, in java all member declarations must be preceded
+by the keyword private.
