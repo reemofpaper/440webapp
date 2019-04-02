@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Vs. Zombies</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Creepster');
+      body {
+        background-color: rgb(255, 219, 88);
+      }
+      #upper_left {
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      }
+      #upper_right {
+      	position: absolute;
+      	top: 0;
+      	right: 0%;
+      }
+      #lower_left {
+      	position: absolute;
+      	bottom: 0%;
+      	left: 0;
+      }
+      #lower_right {
+      	bottom: 0%;
+      	right: 0%;
+      	position: absolute;
+      }
+      img {
+        width: 10%;
+        height: auto;
+      }
+      h1 {
+        font-size: 35px;
+        font-family: 'Creepster', cursive;
+        text-align: center;
+      }
+      h2 {
+        font-size : 40px;
+        font-family: 'Creepster', cursive;
+      }
+      input[type="submit"] {
+        width: 450px;
+        margin: 10px 0;
+        font-size: 50px;
+        font-family: 'Creepster', cursive;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <img id = upper_left src="https://cognigen-cellular.com/images/zombie-clipart-clip-art-8.png" alt="zombie">
+    <img id = upper_right src="https://cognigen-cellular.com/images/zombie-clipart-clip-art-8.png" alt="zombie">
+    <img id = lower_left src="https://cognigen-cellular.com/images/zombie-clipart-clip-art-8.png" alt="zombie">
+    <img id = lower_right src="https://cognigen-cellular.com/images/zombie-clipart-clip-art-8.png" alt="zombie"> -->
+    <h1> <br>
+         I see that you have gathered your courage! <br>
+         Please write the contents of your game data file below. <br>
+         Please make sure you have followed <a href="https://docs.google.com/document/d/1JpTkZ5yRIu27Rbm4dsjDF4fhfU9IsscPrfPW0NqmT7U/edit?usp=sharing" target="_blank">the correct format! </a>  </h1>
+
+    <center>
+
+    <form action="/upload" method="post">
+      <textarea rows="20" cols="60" name="game_data"> *** Enter your GDF contents here *** </textarea> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <marquee behavior="scroll" direction="right" scrollamount="30">
+      <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="zombie">
+    </marquee>
+    </center>
+  </body>
+</html>
