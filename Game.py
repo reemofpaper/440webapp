@@ -47,7 +47,7 @@ def create(game_data):
 
     for x in range(num_questions) :
       scan.iter()
-      temp = Question.Question(file_lines, scan, (x+1))
+      temp = Question.Question(file_lines, scan, x+1)
       allQuestions.append(temp)
 
     for x in range(len(allQuestions)) :
