@@ -1,4 +1,41 @@
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Creepster');
+  body {
+    background-color: rgb(255, 219, 88);
+  }
+  #button {
+    font-family: 'Creepster', cursive;
+    font-size: 35px;
+    width: 6em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+  }
+  a{
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color : green;
+  }
+  a:hover {
+    color: green;
+    background: #eff;
+  }
+  img {
+    width: 10%;
+    height: auto;
+  }
+  h1 {
+    font-size: 45px;
+    font-family: 'Creepster', cursive;
+  }
+  h2 {
+    font-size : 40px;
+    font-family: 'Creepster', cursive;
+  }
   .nav {
     background-color: black;
     color : white;
@@ -8,25 +45,29 @@
     margin: 20px 0 0 ;
     padding: 10px 0;
    }
-
   .nav ul{
     list-style: none;
     margin: 0 2px;
     padding: 0;
   }
-
   .nav li {
     display: inline-block;
     padding: 5px 5px;
     color: white;
   }
-
   .nav a {
     font-weight: normal;
     padding: 10px 5px;
     font-size: .80em;
   }
+  .instructions {
+    font-family: 'Creepster', cursive;
+    font-size: 40px;
+    margin: 20px 0 0 ;
+    padding: 10px 0;
+   }
 </style>
+<body>
 <div class="nav">
   <ul>
     <li class="home"><a href="history.back()">Home</a></li>
@@ -35,4 +76,27 @@
     <li class="about"><a href="#">About</a></li>
   </ul>
  </div>
- <h1> instructions on how to play </h1>
+
+ <marquee behavior="scroll" direction="right" scrollamount="25">
+    <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="zombie">
+  </marquee>
+ 
+  <center>
+ 
+  <h1> Take a moment and make sure you can handle what is to come. If you have the guts to face the living dead I salute you. Here are the instructions, and good luck!!! </h1>
+  </center>
+
+ <div class="instructions">
+    <ol>
+      <li> - At the top of the page, click on the "Play Game" link </li>
+      <li> - Enter a Game Data File (GDF) that correctly follows the format instructions. If you don't have one made yet, play along with the sample provided </li>
+      <li> - Answer the questions in the game to the best of your ability! You have 4 tries to avoid creating the zombie. Every question wrong get you closer to a zombie following you. Let's try to avoid having nightmares. </li>
+      <li> - If you get more than 4 questions wrong, you lose!!! Unfortunately if the zombie is made there is no telling what it will do.... I wish you the best on this adventure!!! </li>
+    </ol>
+  </div>
+
+  <marquee behavior="scroll" direction="right" scrollamount="25">
+    <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="zombie">
+  </marquee>
+
+</body>
