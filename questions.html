@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="icon" href="/static/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
     @import url('https://fonts.googleapis.com/css?family=Creepster');
     * {
@@ -11,7 +13,7 @@
     body {
       background-color: rgb(255, 219, 88);
       font-family: "Courier New";
-      font-size: 35px;
+      font-size: 25px;
     }
     .column {
       float: left;
@@ -26,11 +28,36 @@
       clear: both;
     }
      input[type=radio]{
-      transform: scale(2.5);
+      transform: scale(1.5);
      }
      h1{
+       font-family: 'Creepster', cursive;
        font-size: 40px;
      }
+     img{
+      width: 50%;
+      height: auto;
+     }
+    input[type=submit] {
+      font-family: 'Creepster', cursive;
+      font-size: 35px;
+      width: 6em;
+      border: 2px solid green;
+      background: #ffe;
+      border-radius: 5px;
+    }
+     input[type=submit]{
+      display: block;
+      line-height: 2em;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color : green;
+    }
+     input[type=submit]:hover {
+      color: green;
+      background: #eff;
+    }
 
     </style>
   </head>

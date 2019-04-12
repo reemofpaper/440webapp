@@ -84,7 +84,7 @@ class QuestionAnswerHandler(webapp2.RequestHandler):
         self.response.write(template.render({
           'num_wrong' : num_wrong,
           'total': current_question,
-          'img_url': "/zombieparts/zombie" + str(num_wrong) + ".png"
+          'img_url': "/static/zombie" + str(num_wrong) + ".PNG"
         }))
         return
       else:
@@ -99,7 +99,7 @@ class QuestionAnswerHandler(webapp2.RequestHandler):
       self.response.write(template.render({
         'num_wrong' : num_wrong,
         'total': len(all_questions),
-        'img_url': "/zombieparts/zombie" + str(num_wrong) + ".png"
+        'img_url': "/static/zombie" + str(num_wrong) + ".PNG"
       }))
       return
 
@@ -108,7 +108,7 @@ class QuestionAnswerHandler(webapp2.RequestHandler):
       'intro' : intro,
       'question' : getQuestionDictionaryList(all_questions)[next_question],
       'num_wrong' : num_wrong,
-      'img_url': "/zombieparts/zombie" + str(num_wrong) + ".png"
+      'img_url': "/static/zombie" + str(num_wrong) + ".PNG"
     }
     self.response.write(template.render(values))
 
