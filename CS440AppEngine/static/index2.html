@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Vs. Zombies</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Creepster');
+      body {
+        background-color: rgb(255, 219, 88);
+      }
+      img {
+        width: 10%;
+        height: auto;
+      }
+      h1 {
+        font-size: 35px;
+        font-family: 'Creepster', cursive;
+        text-align: center;
+      }
+      h2 {
+        font-size : 40px;
+        font-family: 'Creepster', cursive;
+      }
+      input[type="submit"] {
+        width: 450px;
+        margin: 10px 0;
+        font-size: 50px;
+        font-family: 'Creepster', cursive;
+      }
+      #button {
+      font-family: 'Creepster', cursive;
+      font-size: 35px;
+      width: 6em;
+      border: 2px solid green;
+      background: #ffe;
+      border-radius: 5px;
+    }
+    a{
+      display: block;
+      width: 100%;
+      line-height: 2em;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      color : green;
+    }
+    a:hover {
+      color: green;
+      background: #eff;
+    }
+      #button {
+        font-family: 'Creepster', cursive;
+        font-size: 35px;
+        width: 6em;
+        border: 2px solid green;
+        background: #ffe;
+        border-radius: 5px;
+      }
+      .nav {
+      background-color: black;
+      color : white;
+      font-family: 'Creepster', cursive;
+      font-size: 40px;
+      text-align: center;
+      margin: 20px 0 0 ;
+      padding: 10px 0;
+     }
+
+    .nav ul{
+      list-style: none;
+      margin: 0 2px;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline-block;
+      padding: 5px 5px;
+      color: white;
+    }
+
+    .nav a {
+      font-weight: normal;
+      padding: 10px 5px;
+      font-size: .80em;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+    <ul>
+      <li class="home"><a href="../..">Home</a></li>
+      <li class="howtoplay"><a class="active" href="/static/how_to_play.html">How To Play</a></li>
+      <li class="playgame"><a href="/static/index2.html">Play Game</a></li>
+      <li class="about"><a href="/static/about.html">About</a></li>
+    </ul>
+   </div>
+
+    <h1> <br>
+         I see that you have gathered your courage! <br>
+         Please write the contents of your game data file below. <br>
+         Please make sure you have followed <a href="https://docs.google.com/document/d/1JpTkZ5yRIu27Rbm4dsjDF4fhfU9IsscPrfPW0NqmT7U/edit?usp=sharing" target="_blank">the correct format! </a>
+         <br>
+         If you do not have a GDF file, one is premade for you! Just click Submit!
+    </h1>
+
+    <center>
+
+    <form action="/upload" method="post">
+      <textarea rows="20" cols="60" name="game_data">
+        GDF 1.0 Code VS. Zombies // Magic word, version number, and Environment name.
+
+        QUESTIONS 5 // 5 questions in this specific file
+
+        11 Which is private member functions access scope? //id question
+        4 1 ////number of options which answer is correct
+        Member functions which can only be used within the class	// answer1
+        Member functions which can used outside the class			 // answer2
+        Member functions which are accessible in derived class		// answer3
+        Member functions which can't be accessed inside the class	// answer4
+        3 // num lines in desc
+        The member functions can be accessed inside the class only if they are private.
+        The access is scope is limited to ensure the security of the private members and their
+        usage.
+
+
+        12 Which among the following is true?
+        4 2 ////number of options which answer is correct
+        The private members can't be accessed by public members of the class
+        The private members can be accessed by public members of the class
+        The private members can be accessed only by the private members of the class
+        The private members can't be accessed by the protected members of the class
+        3 //num lines in desc
+        The private members are accessible within the class. There is no restriction on use of private
+        members by public or protected members. All the members can access the private member functions of
+        the class.
+
+
+
+        13 Which member can never be accessed by inherited classes?
+        4 1 ////number of options which answer is correct
+        Private member function
+        Public member function
+        Protected member function
+        All can be accessed
+        3 //num lines in desc
+        The private member functions can never be accessed in the derived classes. The access specifiers is
+        of maximum security that allows only the members of self class to access the private member
+        functions.
+
+
+
+        14 Which syntax among the following shows that a member is private in a class?
+        4	2 	////number of options which answer is correct
+        private: functionName(parameters)
+        private(functionName(parameters))
+        private functionName(parameters)
+        private::functionName(parameters)
+        2 // num lines in desc
+        The function declaration must contain private keyword follower by the return type and function name.
+        Private keyword is followed by normal function declaration.
+
+
+        15 In java, which rule must be followed?
+        4	4 	////number of options which answer is correct
+        Keyword private preceding list of private member's
+        Keyword private with a colon before list of private member's
+        Keyword private with arrow before each private member
+        Keyword private preceding each private member
+        3 // num lines in desc
+        The private keyword must be mentioned before each private member. Unlike the rule in C++ to specify
+        private once and list all other private member's, in java all member declarations must be preceded
+        by the keyword private.
+      </textarea> <br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <marquee behavior="scroll" direction="right" scrollamount="30">
+      <img src="https://i.pinimg.com/originals/f7/c7/86/f7c7868c2f8c087dbba08c348df5272e.gif" alt="zombie">
+    </marquee>
+    </center>
+  </body>
+</html>

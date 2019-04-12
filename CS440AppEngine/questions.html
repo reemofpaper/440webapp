@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Creepster');
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(255, 219, 88);
+      font-family: "Courier New";
+      font-size: 35px;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+     input[type=radio]{
+      transform: scale(2.5);
+     }
+     h1{
+       font-size: 40px;
+     }
+
+    </style>
+  </head>
+  <body>
+    <div class="row">
+
+      <div class="column">
+        <h1>{{intro}}</h1>
+
+        <form action="/checkAnswer" method="post">
+          <p class = "input">{{question.questionNum}}) {{question.question}}</p><br>
+
+          Select the right answer: <br>
+          {% for answer in question.answers %}
+            <p class = "input">
+              <input type="radio" name="answer" value="{{answer.letter}}">
+              {{answer.answer_text}}
+              </input>
+            </p>
+          {% endfor %}
+
+          <input type="text" name="current_question" value="{{question.questionNum}}" hidden="true">
+          <input type="text" name="num_wrong" value="{{num_wrong}}" hidden="true">
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+
+      <div class="column">
+          <img src="{{img_url}}"/>
+      </div>
+    </div>
+
+  </body>
+</html>
